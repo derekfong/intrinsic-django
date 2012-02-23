@@ -1,0 +1,11 @@
+
+
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'Derek is a bitch' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'Derek is a bitch administration' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
