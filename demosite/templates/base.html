@@ -2,7 +2,7 @@
 <html>
 <head>
 	<link rel='http://fonts.googleapis.com/css?family=Gudea:400,700,400italic' rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="/include/css/layout.css" />
+	<link rel="stylesheet" href="/static/css/layout.css" />
 	<title>{% block title %} Intrinsic | Django Site {% endblock %}</title>
 </head>
 
@@ -10,7 +10,7 @@
 <div id="holder">
 	<div id="navigation">
 		<span class="logo">
-			<a href="/"><img src="/include/images/small.png" alt="logo" width=250 height=83></a>
+			<a href="/"><img src="/static/images/small.png" alt="logo" width=250 height=83></a>
 		</span>
 		{% block sidebar %}
 			{% if user.is_authenticated %}
