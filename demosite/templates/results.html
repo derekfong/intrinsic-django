@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+
+<h1>{{ poll.question }}</h1>
+
+<ul>
+{% for choice in poll.choice_set.all %}
+	<li>{{ choice.choice }} -- {{choice.votes }} vote{{ choice.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+
+<a href="/polls/">Go Back</a>
+{% else %}
+	<p class="error">You must be logged in to view this page</p>
+{% endif %}
+
+{% endblock %}

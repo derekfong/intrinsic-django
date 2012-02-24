@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel='http://fonts.googleapis.com/css?family=Gudea:400,700,400italic' rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="/include/css/layout.css" />
+	<title>{% block title %} Intrinsic | Django Site {% endblock %}</title>
+</head>
+
+<body>
+<div id="holder">
+	<div id="navigation">
+		<span class="logo">
+			<a href="/"><img src="/include/images/small.png" alt="logo" width=250 height=83></a>
+		</span>
+		{% block sidebar %}
+			{% if user.is_authenticated %}
+				<ul class="nav">
+					<li><a href="/accounts/logout/">Logout</a></li>
+					<li>Hello, {{ user.first_name }}</li>
+				</ul>
+			{% else %}
+				{% include "registration/login.html" %}
+			{% endif %}
+		{% endblock %}
+	</div>
+
+	<div id="content">
+		{% block content %} {% endblock %}
+	</div>
+
+	<div id="footer">
+		<p class="footer">Made by Intrinsic Team [Group 12] | Kevin Mann, Derek Fong, Allison Ng</p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+{% if user.is_authenticated %}
+
+	<h2>{{ poll.question }}</h2>
+
+	{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+	{% if pollCheck > 0  %}
+		<p>You may only vote once. Click <a href="/polls/">here</a> to go back.</p>	
+		<ul>
+		{% for choice in poll.choice_set.all %}
+        	<li>{{ choice.choice }} -- {{choice.votes }} vote{{ choice.votes|pluralize }}</li>
+		{% endfor %}
+</ul>
+
+	{% else %}
+
+		<form action="/polls/{{ poll.id }}/vote/" method="post">
+		{% csrf_token %}
+		{% for choice in poll.choice_set.all %}
+			<input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+			<label for="choice{{ forloop.counter }}">{{ choice.choice }}</label><br />
+		{% endfor %}
+		<input type="submit" value="Vote" />
+		</form>
+	{% endif %}
+{% else %}
+		<p>You must be logged in to view this page</p>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,18 @@
+
+	{% if form.errors %}
+		<p class="error">Oops, invalid username or password</p>
+	{% endif %}
+	<div id="login">
+	<form action="/accounts/login/" method="POST">
+		{% csrf_token %}
+		<label for="username">Username:</label>
+		<input type="text" name="username" value="" id="username" class="loginInput">
+		<label for="password">Password:</label>
+		<input type="password" name="password" value="" id="password" class="loginInput">
+
+		<input type="submit" value="login" />
+		<input type="hidden" name="next" value="{{ next|escape }}" />
+	</form>
+	<p class="regText">Click here to <a href="/accounts/register/">register</a></p>
+	</div>
+

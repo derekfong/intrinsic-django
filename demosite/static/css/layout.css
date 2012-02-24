@@ -1,0 +1,94 @@
+html, body {
+	background-color: #FFF;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	color: #323232;
+	font-family: 'Gudea', sans-serif;
+	font-size: 18px;
+}
+
+#holder {
+	min-height: 100%;
+	width: 100%;	
+	position: relative;
+}
+
+#navigation {
+	height: 50px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#content {
+	padding: 10px;
+	padding-bottom: 35px;
+}
+
+#footer {
+	position: absolute;
+	height: 35px; 
+	width: 100%;
+	bottom: 0;
+	font-size: 14px;
+	margin-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 8px;
+	background: #000;
+	color: white;
+}
+
+ul.nav {
+	list-style-type: none;
+	margin: auto;
+	margin-top: 10px;
+	display: inline;
+}
+
+ul.nav li {
+	display: inline;
+	float: right;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: white;
+}
+
+#login {
+	float: right;
+	padding-right: 15px;
+}
+
+.loginInput, #id_username, #id_email, #id_first_name, #id_last_name, #id_password1, #id_password2 {
+	border: 1px solid #323232;
+	font-size: 14px;
+	padding: 3px;
+}
+
+.helptext {
+	display: block;
+	font-weight: bold;
+	font-size: 12px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.logo {
+	padding-left: 15px;
+}
+.regText {
+	text-align: right;
+}
+
+a {
+	text-decoration: none;
+	color: #0a7ed7;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.regBox {
+	width: 200px;
+}
