@@ -5,18 +5,11 @@ admin.autodiscover()
 
 from django.views.generic.simple import direct_to_template
 
-from mysite import settings
-
 urlpatterns = patterns('',
 	url(r'^$', direct_to_template, {'template': 'index.html'}, name="index"),
-	url(r'^polls/', include('polls.urls')),
+	url(r'^polls/', include('demoapp.urls')),
 	url(r'^admin/', include(admin.site.urls)),
 	url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-	url(r'^accounts/', include('polls.urls')),
+	url(r'^accounts/', include('demoapp.urls')),
 )
-
-if settings.DEBUG:
-	urlpatterns += patterns('', 
-		(r'^include/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
-	)
 
