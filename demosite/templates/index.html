@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-	<h1>Intrinsic team</h1>
+	<h2>Intrinsic team</h2>
 	<p>Welcome to our Intrinsic's Django project!</p>
 	<ul>
 		{% if user.is_authenticated %}
 			<li>Go to <a href="/polls/">Polls</a></li>
 		{% else %}
-			<li>Please Login or <a href="/accounts/register/">Register</a></li>
+			<li>Please Login or <a href="/accounts/register/">Register</a> to go to the Polls application</li>
 		{% endif %}
 		{% if user.is_staff %}
 			<li>Go to <a href="/admin/">Admin</a></li>
 		{% endif %}
 	</ul>
-
+	<p>We thank you for checking out our website!</p>
 {% endblock %}

@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="comparison">
+<h2>Django - Written Comparison</h2>
+
+<p>Django is an open-source web framework built using Python. Django was built primarily with the intent to be used to develop web applications that require a database back-end. It is ideal to use Django to create web applications that interact with sensitive user information. The main aspects of Django that developers will find beneficial are as follows: highly modular, developer-friendly, development efficient, encouragement of reusability, portability, and importance of security. </p>
+
+<p>Modularization is a technique used to separate a large component into smaller parts/modules that are well-defined. Django demonstrates modularity in that it strictly follows the Model-View-Controller (MVC) software architecture. However, Django does make a slight modification to the architecture. In Django, the traditional View is called a Template and the traditional Controller is called a View. The purpose of using a templating system is to modularize the tasks of code development, design and content.</p>
+
+<p>Web frameworks should be developer-friendly, which means that they should be easy for developers to learn, code, and manage. Django is developer-friendly in that it allows a developer to begin immediately after Django is setup. It comes preloaded with an integrated lightweight developer web server and the ability to use SQLite as the database backend. This means if a developer wants to start developing right away, they don’t have to consume their time setting up a web server (e.g. Apache) or a database server (e.g. MySQL). They can setup Django on their local machines and jump right into coding. This setup is also extremely useful for testing, as the developer doesn’t have to use their production web server to test web application changes or updates. They can conveniently use the built in web server and SQLite to test on their isolated local machine. One of the features of Django that makes administering a web application seemless is the built-in administrative interface. When enabled, the administrative interface provides the administrator with a simple, yet powerful web interface for managing the web application.</p>
+
+<p>The efficiency of a web framework is a very important when choosing which framework to use when developing a web application. Fortunately, Django is quite development efficient. In particular, Django significantly reduces the lines of code written. The major benefit of this is that it reduces the chances of making human errors (e.g. typos) when coding, mainly because there is a smaller subset of code a developer would have to look over when reviewing code.</p>
+
+
+
+<h4>STUFF ABOUT their database API, ease of use.</h4>
+<ul><li>Easy to set up using Django’s administrator view.</li></ul>
+
+
+<h4>Basic definitions:</h4>
+<ul>
+<li>Modularity: separating a large component into smaller parts/modules that are well-defined.</li>
+<li>Developer-friendly: easy for developers to learn, code, and manage.</li>
+<li>Development Efficient: using time and resources effectively and efficiently.</li>
+<li>Reusability: components of a system can be reused in other systems.</li>
+<li>Flexibility: being able to adjust if changes need to be made to the server or the web application</li>
+<li>Security: </li>
+</ul>
+
+
+<h3>Aspects of Django</h3>
+<ol>
+<li>Modularity (showing code)</li>
+	<ul>	
+	<li>Strictly follows the MVC (Models-Views-Controllers) software architecture.</li>
+	<li>Django slightly modifies the MVC structure by using Templates for the Views.</li>
+	<li>Templating system</li>
+	</ul>
+<li>Developer-friendly (admin interface, ETC)</li>
+	<ul>	
+	<li>Comes preloaded with a lightweight web server.</li>
+	<li>Comes preloaded with SQLite.</li>
+	<li>Allows a developer to start developing right away on their local machine with minimal setup.</li>
+	<li>Built-in administrative interface for seamless management of web application with minimal effort.</li>
+	</ul>
+<li>Development Efficiency (lines of code for admin interface, easier way to do things)</li>
+	<ul>	
+	<li>Significantly reduces the amount of code written.</li>
+	<li>Less chance of making syntactical errors.</li>
+	</ul>
+<li>Reusability (explain the loose coupling)</li>
+	<ul>
+	<li>Created applications can be utilized in other applications if needed.</li>
+	<li>Don’t need to remake everything every time an application is created.</li>
+	<li>Loose coupling.</li>
+	</ul>
+<li>Flexibility(URL Design)</li>
+	<ul>
+	<li>Can move from web server to web server with ease.</li>
+	<li>Pretty, customized URLs</li>
+	</ul>
+<li>Security (built in)</li>
+	<ul>
+	<li>SQL Injection - the Django database API automatically protects against SQL injection by escaping certain SQL parameters.</li>
+	</ul>
+</ol>
+
+
+
+<h3>Comparisons of Django</h3>
+<h4>TurboGears </h4>
+	<p>In this article, TurboGears is also a python-based framework for web development. However, their features differ depending on the type of application it is used for. Both are modular in terms both structured as a MVC architecture - however, Django is Content Management System driven for information that is already known, whereas TurboGears provides more user interaction and is more preferred for general web applications. As well, TurboGears has more features for the more experienced developer - such as Mochikit JavaScript support for AJAX, Kid (XML templating), Genshi (for parsing), Mako (non-XML templating). SQL Alchemy and SQLObject. Django is lighweight and basic, containing minimal toolkits. However, this makes Django easier to learner inexperienced Python-user and web developer.</p>
+
+<h4>Rails:</h4>
+	<p>Ben Askins and Alan Green presented “A Rails / Django Comparison” at the Open Source Developer’s Conference in 2006, which was later published as a peer reviewed paper.  Both developers implemented the same specifications for a web application, one in Ruby on Rails and one in Django; the results were compared quantitatively and qualitatively.  </p>
+
+	<p>Both applications were compared based on lines of code and time spent developing each portion of the application.  Overall, Django was only minimally ahead of Ruby on Rails in terms of lines of code (726 vs. 814); however, Django was well ahead of Ruby on Rails in lines of code for Ruby and Python implementation (320 vs. 517).  Django lagged significantly behind Ruby on Rails in templating system implementation (406 vs. 297).  In terms of time spent on implementation, Django again bested Ruby on Rails; implementation in Django was nearly half of the time spent on Ruby on Rails.  The largest difference between the two implementations was in the administration pages.  This is an area that Django really exceeds compared to other web frameworks.  In Django, only a small number of lines of code are required to build and customize an administration interface</p>
+
+<h3>References:</h3>
+<ul>
+<li><a href="http://www.zimbio.com/Web+Frameworks/articles/1Di4ZJkyD7x/TurboGears+vs+Django">http://www.zimbio.com/Web+Frameworks/articles/1Di4ZJkyD7x/TurboGears+vs+Django</a></li>
+<li><a href="http://groups.google.com/group/turbogears/browse_thread/thread/d3998a4e750c39c9/4d7710c0297e36c3?pli=1">http://groups.google.com/group/turbogears/browse_thread/thread/d3998a4e750c39c9/4d7710c0297e36c3?pli=1</a></li>
+<li><a href="http://ojs.pythonpapers.org/index.php/tpp/article/view/24/24">http://ojs.pythonpapers.org/index.php/tpp/article/view/24/24</a></li>
+<li>[Book] Django: Visual QuickPro Guide by Steven Holzner (978-0-321-64340-7)</li>
+</ul>
+</div>
+
+{% endblock %}

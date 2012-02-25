@@ -9,12 +9,13 @@
 
 	{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 	{% if pollCheck > 0  %}
-		<p>You may only vote once. Click <a href="/polls/">here</a> to go back.</p>	
+		<p class="error">You may only vote once. </p>	
 		<ul>
 		{% for choice in poll.choice_set.all %}
-        	<li>{{ choice.choice }} -- {{choice.votes }} vote{{ choice.votes|pluralize }}</li>
+        		<li>{{ choice.choice }} -- {{choice.votes }} vote{{ choice.votes|pluralize }}</li>
 		{% endfor %}
-</ul>
+		</ul>
+		<p>Click <a href="/polls/">here</a> to go back.</p>
 
 	{% else %}
 
