@@ -65,7 +65,7 @@ ul.errorlist {
 }
 
 #footLeft {
-	padding: 7px;
+	padding: 5px;
 	font-size: 14px;
 	color: #FFF;
 	position: absolute;
