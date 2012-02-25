@@ -44,6 +44,11 @@ ul.errorlist {
 	color: #FFF;
 }
 
+.linksText a:hover {
+	color: #0a7ed7;
+	text-decoration: none;
+}
+
 #navigation {
 	height: 50px;
 	width: 100%;
