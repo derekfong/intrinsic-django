@@ -44,6 +44,11 @@ ul.errorlist {
 	color: #FFF;
 }
 
+.linksText a:hover {
+	color: #0a7ed7;
+	text-decoration: none;
+}
+
 #navigation {
 	height: 50px;
 	width: 100%;
@@ -65,7 +70,7 @@ ul.errorlist {
 }
 
 #footLeft {
-	padding: 5px;
+	padding: 7px;
 	font-size: 14px;
 	color: #FFF;
 	position: absolute;
@@ -137,3 +142,21 @@ a:hover {
 .regBox {
 	width: 200px;
 }
+
+a.subhead { 
+	color: #323232;
+	text-decoration: none;
+}
+
+h5.topics {
+	padding: 0;
+	margin: 0;
+}	
+
+ul.topics {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 50px;
+	margin: 0;
+}
+

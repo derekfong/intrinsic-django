@@ -142,3 +142,21 @@ a:hover {
 .regBox {
 	width: 200px;
 }
+
+a.subhead { 
+	color: #323232;
+	text-decoration: none;
+}
+
+h5.topics {
+	padding: 0;
+	margin: 0;
+}	
+
+ul.topics {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	margin: 0;
+}
+
