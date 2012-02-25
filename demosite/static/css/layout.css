@@ -14,10 +14,30 @@ html, body {
 	position: relative;
 }
 
+#linksBar {
+	height: 30px;
+	background: #000;
+	color: #FFF;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.linksText { 
+	padding-top: 7px;
+	float: right;
+	font-size: 14px;
+	padding-right: 10px;
+}
+
+.linksText a {
+	color: #FFF;
+}
+
 #navigation {
 	height: 50px;
 	width: 100%;
-	padding-top: 10px;
+	padding-top: 40px;
 	padding-bottom: 10px;
 }
 
@@ -28,15 +48,19 @@ html, body {
 
 #footer {
 	position: absolute;
-	height: 35px; 
+	height: 30px; 
 	width: 100%;
 	bottom: 0;
 	font-size: 14px;
 	margin-right: 15px;
 	padding-left: 15px;
-	padding-bottom: 8px;
+	padding-bottom: 7px;
 	background: #000;
 	color: white;
+}
+
+#comparison {
+	padding: 20px;
 }
 
 ul.nav {
