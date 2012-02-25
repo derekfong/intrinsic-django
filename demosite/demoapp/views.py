@@ -1,7 +1,7 @@
-# Create your views here.
+#Create your views here.
 
 from django.shortcuts import render_to_response, get_object_or_404
-from demoapp.models import Choice, Poll, Voted
+from polls.models import Choice, Poll, Voted
 from django.template import RequestContext
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
@@ -47,14 +47,14 @@ def vote(request, poll_id):
 
 def register(request):
 	if request.method == 'POST':
-		form = RegisterForm(request.POST)
-		if form.is_valid():
-			new_user = form.save()
+		regForm = RegisterForm(request.POST)
+		if regForm.is_valid():
+			new_user = regForm.save()
 			return HttpResponseRedirect("/")
 	else:
-		form = RegisterForm()
+		regForm = RegisterForm()
 
-	return render_to_response("register.html", {'form': form },
+	return render_to_response("register.html", {'regForm': regForm },
 					context_instance=RequestContext(request))
 
 def logout_view(request):
