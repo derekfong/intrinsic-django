@@ -44,7 +44,7 @@
 
 <h3>Comparisons of Django</h3>
 <h4><a name="turbogears" class="subhead">TurboGears</a></h4>
-	<p>TurboGears is also another popular Python framework that is based on the Pylons . Both Django and TurboGears are modular as they both follow the MVC architecture. However, Django is more content management driven for data that is already known, whereas TurboGears provides more user interaction for dynamic content and is more preferred for general web applications.</p>
+	<p>TurboGears is also another popular Python framework that is based on Pylons. Both Django and TurboGears are modular as they both follow the MVC architecture. However, Django is more content management driven for data that is already known, whereas TurboGears provides more user interaction for dynamic content and is more preferred for general web applications.</p>
 
 <p>As well, TurboGears has more features for more experienced developers: Mochikit JavaScript support for AJAX, Kid (XML templating), Genshi (for parsing), Mako (non-XML templating), SQL Alchemy and SQLObject. In comparison to Django, it contains a more simplistic Object Relational Mapping (i.e. creating additional or editing existing models is more complicated in Django), and does not support AJAX, nor XML templating. Overall, Django is commented as being easier to use for those who do not have much experience with Python.</p>
 

@@ -1,4 +1,12 @@
-#Create your views here.
+# File: views.py
+# Group: 12 (Team Intrinsic)
+# Members: Kevin Mann, Derek Fong, Allison Ng
+# CMPT470: Technical Evaluation
+#
+# Date of Creation: Feb 22, 2012
+# Revised: Feb 24, 2012
+#
+# Description: ^^^^^^^^^^^^^ 
 
 from django.shortcuts import render_to_response, get_object_or_404
 from demoapp.models import Choice, Poll, Voted

@@ -1,13 +1,3 @@
-# File: forms.py
-# Group: 12 (Team Intrinsic)
-# Members: Kevin Mann, Derek Fong, Allison Ng
-# CMPT470: Technical Evaluation
-#
-# Date of Creation: Feb 23, 2012
-# Revised: Feb 23, 2012
-#
-# Description: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 from django.contrib.auth.forms import UserCreationForm
 from django import forms
 from django.contrib.auth.models import User

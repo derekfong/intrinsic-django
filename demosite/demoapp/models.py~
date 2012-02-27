@@ -14,3 +14,10 @@ class Choice(models.Model):
 	votes = models.IntegerField()
 	def __unicode__(self):
 		return self.choice
+
+class Voted(models.Model):
+	pollNumber = models.IntegerField()
+	userNumber = models.IntegerField()
+	vote_time = models.DateTimeField('date voted')
+	def __unicode__(self):
+		return u'%s' %self.userNumber

@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import *
-#from views import *
+from django.contrib.auth.views import login, logout
 
 urlpatterns = patterns('demoapp.views',
     	url(r'^$', 'index'),
