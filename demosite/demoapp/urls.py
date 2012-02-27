@@ -6,7 +6,7 @@
 # Date of Creation: Feb 22, 2012
 # Revised: Feb 24, 2012
 #
-# Description: Defines what page to direct URLs to
+# Description: Defines what views to direct URLs to
 
 from django.conf.urls.defaults import *
 from django.contrib.auth.views import login, logout
